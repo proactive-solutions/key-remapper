@@ -55,7 +55,7 @@ First run:
 1. Open Settings from the menu-bar icon (⌨️).
 2. Grant Accessibility when prompted, then toggle **Enabled** off/on.
 3. Toggle **Launch at login** to auto-start after boot.
-4. Add/edit mappings; changes restart the tap automatically.
+4. Add/edit mappings; changes apply live on the next key event (no tap restart needed).
 
 ## How it works
 

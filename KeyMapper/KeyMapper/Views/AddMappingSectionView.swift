@@ -27,7 +27,11 @@ struct AddMappingSectionView: View {
                 .frame(width: 180)
                 Button("Add") {
                     remapper.addMapping(source: newSource, destination: newDestination)
-                    remapper.restart()
+                    // Live-apply: the tap picks up the new mapping on the next
+                    // key event. start() no-ops if already running — unlike
+                    // restart(), it never tears down the tap/thread, so adding
+                    // a mapping costs bytes, not megabytes.
+                    remapper.start()
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(newSource == newDestination)

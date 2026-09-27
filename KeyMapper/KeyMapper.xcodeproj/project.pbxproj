@@ -26,6 +26,7 @@
 		620000000000000000000003 /* ModifierFlagRewriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520000000000000000000003 /* ModifierFlagRewriteTests.swift */; };
 		620000000000000000000004 /* KeyMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510000000000000000000002 /* KeyMapping.swift */; };
 		620000000000000000000005 /* ModifierFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510000000000000000000014 /* ModifierFlags.swift */; };
+		620000000000000000000006 /* MappingStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520000000000000000000004 /* MappingStorageTests.swift */; };
 		A60000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55000000000000000000001 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		520000000000000000000001 /* KeyCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodeTests.swift; sourceTree = "<group>"; };
 		520000000000000000000002 /* KeyMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyMappingTests.swift; sourceTree = "<group>"; };
 		520000000000000000000003 /* ModifierFlagRewriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierFlagRewriteTests.swift; sourceTree = "<group>"; };
+		520000000000000000000004 /* MappingStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingStorageTests.swift; sourceTree = "<group>"; };
 		710000000000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		710000000000000000000002 /* KeyMapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyMapper.entitlements; sourceTree = "<group>"; };
 		A55000000000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				520000000000000000000001 /* KeyCodeTests.swift */,
 				520000000000000000000002 /* KeyMappingTests.swift */,
 				520000000000000000000003 /* ModifierFlagRewriteTests.swift */,
+				520000000000000000000004 /* MappingStorageTests.swift */,
 			);
 			path = KeyMapperTests;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				620000000000000000000001 /* KeyCodeTests.swift in Sources */,
 				620000000000000000000002 /* KeyMappingTests.swift in Sources */,
 				620000000000000000000003 /* ModifierFlagRewriteTests.swift in Sources */,
+				620000000000000000000006 /* MappingStorageTests.swift in Sources */,
 				620000000000000000000004 /* KeyMapping.swift in Sources */,
 				620000000000000000000005 /* ModifierFlags.swift in Sources */,
 			);

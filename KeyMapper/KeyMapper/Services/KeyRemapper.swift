@@ -149,6 +149,12 @@ final class KeyRemapper: ObservableObject {
 		DispatchQueue.main.async { self.isRunning = false }
 	}
 
+	/// Bounces the event tap. Only needed to recover a dead tap — NOT for
+	/// mapping edits: handleEvent rebuilds its lookup from live `mappings`
+	/// on every key event, so adds/toggles/removals apply instantly with the
+	/// tap left running. Call start() (a no-op when live) from CRUD paths
+	/// instead; each teardown/setup cycle churns a Mach port, runloop
+	/// source and thread (~MBs), which is what made memory grow per mapping.
 	func restart() {
 		stop()
 		// Debounce: picker/toggle changes can fire restart() several times in

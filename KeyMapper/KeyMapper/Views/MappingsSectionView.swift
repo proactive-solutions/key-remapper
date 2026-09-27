@@ -21,14 +21,20 @@ struct MappingsSectionView: View {
                     HStack {
                         Toggle("", isOn: $mapping.isEnabled)
                             .labelsHidden()
-                            .onChange(of: mapping.isEnabled) { _, _ in remapper.restart() }
+                            // NOTE: no restart() here. The event tap reads
+                            // mappings live on every key event (see
+                            // KeyRemapper.handleEvent -> activeMap()), so edits
+                            // apply instantly. start() is a no-op when the tap
+                            // is already live; it only ensures a stopped tap
+                            // gets going (same as before, minus the teardown).
+                            .onChange(of: mapping.isEnabled) { _, _ in remapper.start() }
                         Picker("", selection: $mapping.sourceKeyCode) {
                             ForEach(KeyCode.all, id: \.code) { item in
                                 Text(item.name).tag(item.code)
                             }
                         }
                         .frame(width: 170)
-                        .onChange(of: mapping.sourceKeyCode) { _, _ in remapper.restart() }
+                        .onChange(of: mapping.sourceKeyCode) { _, _ in remapper.start() }
 
                         Image(systemName: "arrow.right")
                             .foregroundColor(.secondary)
@@ -39,12 +45,12 @@ struct MappingsSectionView: View {
                             }
                         }
                         .frame(width: 170)
-                        .onChange(of: mapping.destinationKeyCode) { _, _ in remapper.restart() }
+                        .onChange(of: mapping.destinationKeyCode) { _, _ in remapper.start() }
 
                         Spacer()
                         Button {
                             remapper.removeMapping(mapping)
-                            remapper.restart()
+                            remapper.start()
                         } label: {
                             Image(systemName: "trash")
                         }
