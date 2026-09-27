@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		620000000000000000000003 /* ModifierFlagRewriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520000000000000000000003 /* ModifierFlagRewriteTests.swift */; };
 		620000000000000000000004 /* KeyMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510000000000000000000002 /* KeyMapping.swift */; };
 		620000000000000000000005 /* ModifierFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510000000000000000000014 /* ModifierFlags.swift */; };
+		A60000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55000000000000000000001 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,23 +45,24 @@
 		510000000000000000000012 /* PermissionsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsSectionView.swift; sourceTree = "<group>"; };
 		510000000000000000000013 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		510000000000000000000014 /* ModifierFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierFlags.swift; sourceTree = "<group>"; };
-		710000000000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		710000000000000000000002 /* KeyMapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyMapper.entitlements; sourceTree = "<group>"; };
-		B2B2B2B2B2B2B2B2B2B2B2B2 /* KeyMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520000000000000000000001 /* KeyCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodeTests.swift; sourceTree = "<group>"; };
 		520000000000000000000002 /* KeyMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyMappingTests.swift; sourceTree = "<group>"; };
 		520000000000000000000003 /* ModifierFlagRewriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierFlagRewriteTests.swift; sourceTree = "<group>"; };
+		710000000000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		710000000000000000000002 /* KeyMapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyMapper.entitlements; sourceTree = "<group>"; };
+		A55000000000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2B2B2B2B2B2B2B2B2B2B2B2 /* KeyMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CCCCCCCCCCCCCCCCCCCCCCCC /* Frameworks */ = {
+		B5B5B5B5B5B5B5B5B5B5B5B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5B5B5B5B5B5B5B5B5B5B5B5 /* Frameworks */ = {
+		CCCCCCCCCCCCCCCCCCCCCCCC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -70,7 +72,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		444444444444444444444444 /* main */ = {
+		444444444444444444444444 = {
 			isa = PBXGroup;
 			children = (
 				555555555555555555555555 /* KeyMapper */,
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				510000000000000000000001 /* KeyMapperApp.swift */,
+				A55000000000000000000001 /* Assets.xcassets */,
 				666666666666666666666666 /* Models */,
 				777777777777777777777777 /* Services */,
 				888888888888888888888888 /* Views */,
@@ -126,6 +129,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		999999999999999999999999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				333333333333333333333333 /* KeyMapper.app */,
+				B2B2B2B2B2B2B2B2B2B2B2B2 /* KeyMapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B3B3B3B3B3B3B3B3B3B3B3B3 /* KeyMapperTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,15 +146,6 @@
 				520000000000000000000003 /* ModifierFlagRewriteTests.swift */,
 			);
 			path = KeyMapperTests;
-			sourceTree = "<group>";
-		};
-		999999999999999999999999 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				333333333333333333333333 /* KeyMapper.app */,
-				B2B2B2B2B2B2B2B2B2B2B2B2 /* KeyMapperTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +216,7 @@
 				en,
 				Base,
 			);
-			mainGroup = 444444444444444444444444 /* main */;
+			mainGroup = 444444444444444444444444;
 			productRefGroup = 999999999999999999999999 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,13 +228,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DDDDDDDDDDDDDDDDDDDDDDDD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6B6B6B6B6B6B6B6B6B6B6B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,9 +235,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DDDDDDDDDDDDDDDDDDDDDDDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60000000000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B4B4B4B4B4B4B4B4B4B4B4B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620000000000000000000001 /* KeyCodeTests.swift in Sources */,
+				620000000000000000000002 /* KeyMappingTests.swift in Sources */,
+				620000000000000000000003 /* ModifierFlagRewriteTests.swift in Sources */,
+				620000000000000000000004 /* KeyMapping.swift in Sources */,
+				620000000000000000000005 /* ModifierFlags.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBBBBBBBBBBBBBBBBBBBBBBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,51 +279,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4B4B4B4B4B4B4B4B4B4B4B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				620000000000000000000001 /* KeyCodeTests.swift in Sources */,
-				620000000000000000000002 /* KeyMappingTests.swift in Sources */,
-				620000000000000000000003 /* ModifierFlagRewriteTests.swift in Sources */,
-				620000000000000000000004 /* KeyMapping.swift in Sources */,
-				620000000000000000000005 /* ModifierFlags.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
 		101010101010101010101010 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -335,6 +309,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -366,6 +342,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -438,18 +416,39 @@
 			};
 			name = Release;
 		};
+		FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EEEEEEEEEEEEEEEEEEEEEEEE /* Build configuration list for PBXProject "KeyMapper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */,
-				101010101010101010101010 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		202020202020202020202020 /* Build configuration list for PBXNativeTarget "KeyMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -464,6 +463,15 @@
 			buildConfigurations = (
 				B8B8B8B8B8B8B8B8B8B8B8B8 /* Debug */,
 				B9B9B9B9B9B9B9B9B9B9B9B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEEEEEEEEEEEEEEEEEEEEEEE /* Build configuration list for PBXProject "KeyMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */,
+				101010101010101010101010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
